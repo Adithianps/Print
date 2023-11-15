@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Print Order Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Order Your Print</h1>
+    <form id="printOrderForm" enctype="multipart/form-data">
+      <label for="document">Upload Document/Image:</label>
+      <input type="file" id="document" name="document" required accept=".pdf, .doc, .docx, .jpg, .png">
+
+      <label for="copies">Number of Copies:</label>
+      <input type="number" id="copies" name="copies" required>
+
+      <label for="deliveryDate">Delivery Date:</label>
+      <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+      <label for="additionalRequests">Additional Requests:</label>
+      <textarea id="additionalRequests" name="additionalRequests"></textarea>
+
+      <label for="userName">Your Name:</label>
+      <input type="text" id="userName" name="userName" required>
+
+      <label for="classDivision">Class Division:</label>
+      <input type="text" id="classDivision" name="classDivision" required>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
